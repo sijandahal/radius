@@ -1,0 +1,79 @@
+*,*:before, *after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(#E6DADA,#274046);
+}
+
+.container {
+    max-width: 800px;
+    max-height: 700px;
+    width: 100%;
+    border: 1px solid;
+    margin: 0px auto;
+}
+input,button {
+    background: transparent;
+    outline: none;
+    border: 0;
+}
+/* .container .circle {
+    height: 400px;
+    width: 400px;
+    background-color: deeppink;
+    border-radius: 100%;
+    margin: 0px auto;
+} */
+
+.container form {
+    display: block;
+    position: relative;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.container form input {
+   background-color: khaki;
+   padding: 15px 20px;
+}
+
+.container  button {
+    position: absolute;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.575);
+    padding: 15px 20px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: .2s ease all;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.container  button:hover {
+    background-color: #fff;
+    color: black;
+ }
+
+.answer {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.4em;
+}
